@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		59E8D07085662408240223B5 /* Pods_SlackClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B957B1F1BFF479E8F42E5A7B /* Pods_SlackClone.framework */; };
+		81189886222DCF3C00B9BCD4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81189885222DCF3C00B9BCD4 /* Constants.swift */; };
+		81189888222DD42400B9BCD4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81189887222DD42400B9BCD4 /* LoginVC.swift */; };
 		81279DC1222C6A1700F6580C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81279DC0222C6A1700F6580C /* AppDelegate.swift */; };
 		81279DC6222C6A1700F6580C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81279DC4222C6A1700F6580C /* Main.storyboard */; };
 		81279DC8222C6A1800F6580C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81279DC7222C6A1800F6580C /* Assets.xcassets */; };
@@ -16,11 +18,16 @@
 		81279DDB222C701300F6580C /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81279DDA222C701300F6580C /* ChatVC.swift */; };
 		81279DDD222C702500F6580C /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81279DDC222C702500F6580C /* ChannelVC.swift */; };
 		81279DDF222C76D400F6580C /* gradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81279DDE222C76D400F6580C /* gradientView.swift */; };
+		81819AA42232D28600A4964D /* authService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81819AA32232D28600A4964D /* authService.swift */; };
+		819E1FD22235B70100C36A0C /* RoundedBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819E1FD12235B70100C36A0C /* RoundedBtn.swift */; };
+		81ACD70B222F1AAF00839B66 /* registerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81ACD70A222F1AAF00839B66 /* registerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4CEF0A15F68022E4E45858A1 /* Pods-SlackClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlackClone/Pods-SlackClone.release.xcconfig"; sourceTree = "<group>"; };
 		756CA4946C7DD41B9811F086 /* Pods-SlackClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlackClone/Pods-SlackClone.debug.xcconfig"; sourceTree = "<group>"; };
+		81189885222DCF3C00B9BCD4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		81189887222DD42400B9BCD4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		81279DBD222C6A1700F6580C /* SlackClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlackClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81279DC0222C6A1700F6580C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81279DC5222C6A1700F6580C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -33,6 +40,9 @@
 		81279DDA222C701300F6580C /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		81279DDC222C702500F6580C /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		81279DDE222C76D400F6580C /* gradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gradientView.swift; sourceTree = "<group>"; };
+		81819AA32232D28600A4964D /* authService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = authService.swift; sourceTree = "<group>"; };
+		819E1FD12235B70100C36A0C /* RoundedBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBtn.swift; sourceTree = "<group>"; };
+		81ACD70A222F1AAF00839B66 /* registerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerVC.swift; sourceTree = "<group>"; };
 		B957B1F1BFF479E8F42E5A7B /* Pods_SlackClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlackClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -57,6 +67,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		81189884222DCF1D00B9BCD4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				81189885222DCF3C00B9BCD4 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		81279DB4222C6A1700F6580C = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +97,8 @@
 		81279DBF222C6A1700F6580C /* SlackClone */ = {
 			isa = PBXGroup;
 			children = (
+				81819AA22232D26D00A4964D /* Services */,
+				81189884222DCF1D00B9BCD4 /* Utilities */,
 				81279DD7222C6FE000F6580C /* Model */,
 				81279DD9222C6FF500F6580C /* View */,
 				81279DD8222C6FED00F6580C /* Controller */,
@@ -113,6 +133,8 @@
 			children = (
 				81279DDA222C701300F6580C /* ChatVC.swift */,
 				81279DDC222C702500F6580C /* ChannelVC.swift */,
+				81189887222DD42400B9BCD4 /* LoginVC.swift */,
+				81ACD70A222F1AAF00839B66 /* registerVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -121,8 +143,17 @@
 			isa = PBXGroup;
 			children = (
 				81279DDE222C76D400F6580C /* gradientView.swift */,
+				819E1FD12235B70100C36A0C /* RoundedBtn.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		81819AA22232D26D00A4964D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				81819AA32232D28600A4964D /* authService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		87F925568B52E77C948D063E /* Frameworks */ = {
@@ -253,6 +284,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				81279DDD222C702500F6580C /* ChannelVC.swift in Sources */,
+				81819AA42232D28600A4964D /* authService.swift in Sources */,
+				819E1FD22235B70100C36A0C /* RoundedBtn.swift in Sources */,
+				81ACD70B222F1AAF00839B66 /* registerVC.swift in Sources */,
+				81189886222DCF3C00B9BCD4 /* Constants.swift in Sources */,
+				81189888222DD42400B9BCD4 /* LoginVC.swift in Sources */,
 				81279DDB222C701300F6580C /* ChatVC.swift in Sources */,
 				81279DDF222C76D400F6580C /* gradientView.swift in Sources */,
 				81279DC1222C6A1700F6580C /* AppDelegate.swift in Sources */,
