@@ -15,6 +15,7 @@ typealias CompletionHandler = (_ Success : Bool) -> ()
 let BASE_URL = "https://fierce-waters-33615.herokuapp.com/v1/"
 let URL_REGISTER = "\(BASE_URL)account/register"
 let URL_LOGIN = "\(BASE_URL)account/login"
+let URL_USER_ADD = "\(BASE_URL)user/add"
 
 
 // segues
@@ -22,6 +23,7 @@ let URL_LOGIN = "\(BASE_URL)account/login"
 let TO_LOGIN = "toLogin"
 let TO_CREATE_ACC = "toCreateAcc"
 let UNWIND = "unwindToChannel"
+let TOAVATARPICKER = "toAvatarPicker"
 
 
 //User Defaults
