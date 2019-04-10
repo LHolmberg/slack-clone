@@ -26,6 +26,13 @@ class registerVC: UIViewController {
 
         
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if UserDataService.instance.avatarName != "" {
+            userImg.image = UIImage(named: UserDataService.instance.avatarName)
+            avatarName = UserDataService.instance.avatarName
+        }
+    }
     @IBAction func pickBgColorPressed(_ sender: Any) {
     }
     @IBAction func pickAvatarPressed(_ sender: Any) {
