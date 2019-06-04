@@ -415,7 +415,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="d3c-7s-PRp">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="d3c-7s-PRp" customClass="CircleImage" customModule="SlackClone" customModuleProvider="target">
                                 <rect key="frame" x="137.5" y="264" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="UyI-AD-302"/>
@@ -438,6 +438,10 @@
                                     <action selector="pickBgColorPressed:" destination="ast-Pt-D9N" eventType="touchUpInside" id="2Qh-bG-rBH"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="n6t-6f-llP">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -454,7 +458,9 @@
                             <constraint firstItem="cFA-Le-Y50" firstAttribute="trailing" secondItem="AnS-mf-gpe" secondAttribute="trailing" constant="16" id="dBG-qJ-QkF"/>
                             <constraint firstItem="BLn-vg-4ee" firstAttribute="top" secondItem="cFA-Le-Y50" secondAttribute="top" constant="40" id="dwl-Hf-Wbf"/>
                             <constraint firstItem="d3c-7s-PRp" firstAttribute="top" secondItem="F9o-Ic-PWG" secondAttribute="bottom" constant="40" id="hkg-TP-WlX"/>
+                            <constraint firstItem="n6t-6f-llP" firstAttribute="centerY" secondItem="LdS-Pg-gLw" secondAttribute="centerY" constant="-100" id="kGM-AS-dfO"/>
                             <constraint firstItem="gEw-9N-4UV" firstAttribute="top" secondItem="d3c-7s-PRp" secondAttribute="top" id="nHw-9l-aOJ"/>
+                            <constraint firstItem="n6t-6f-llP" firstAttribute="centerX" secondItem="LdS-Pg-gLw" secondAttribute="centerX" id="nMx-gO-hay"/>
                             <constraint firstItem="80b-v9-Ehg" firstAttribute="centerX" secondItem="LdS-Pg-gLw" secondAttribute="centerX" id="rTn-NV-OMm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cFA-Le-Y50"/>
@@ -462,6 +468,7 @@
                     <connections>
                         <outlet property="emailTxt" destination="q3o-wE-Bgr" id="4Ky-LK-hYB"/>
                         <outlet property="passwordTxt" destination="014-FC-2qC" id="tal-1a-kIr"/>
+                        <outlet property="spinner" destination="n6t-6f-llP" id="nHf-Xt-xJL"/>
                         <outlet property="userImg" destination="d3c-7s-PRp" id="gw5-75-piK"/>
                         <outlet property="usernameTxt" destination="Zeq-nA-LEb" id="RP4-23-d5y"/>
                         <segue destination="Rt8-ON-GMA" kind="unwind" identifier="unwindToChannel" unwindAction="prepareforUnwindWithSegue:" id="B6x-mT-qGa"/>
@@ -497,7 +504,7 @@
                                 <rect key="frame" x="273" y="80" width="22" height="22"/>
                                 <state key="normal" image="addChannelButton"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="8Sc-gv-LjD">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="8Sc-gv-LjD" customClass="CircleImage" customModule="SlackClone" customModuleProvider="target">
                                 <rect key="frame" x="16" y="572" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="dUW-Vj-aL5"/>
@@ -563,6 +570,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="ydv-bQ-xeP" id="A9l-Pg-iey"/>
+                        <outlet property="userImg" destination="8Sc-gv-LjD" id="APH-RF-q2E"/>
                         <segue destination="fej-et-w3g" kind="show" identifier="toLogin" id="qSa-aJ-Fpp"/>
                     </connections>
                 </viewController>
