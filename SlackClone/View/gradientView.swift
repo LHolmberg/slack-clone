@@ -29,5 +29,6 @@ class gradientView: UIView {
         gradientLayer.endPoint = CGPoint(x: 1, y: 1)
         gradientLayer.frame = self.bounds
         self.layer.insertSublayer(gradientLayer, at: 0)
+
     }
 }
